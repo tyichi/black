@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: grey;
+            margin: 0;
+        }
+        nav{
+    
+            display:flex;
+            flex-direction: row;
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            height: 100px;
+            font-size: 30px;
+            font-weight: bold;
+            box-sizing: border-box;
+            
+            color: white;
+
+            animation-name: dick;
+            animation-duration: 2s;
+        }
+
+        nav p{
+            background-color: black;
+            padding-top: 40px;
+            flex: 1 1 10%;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s linear;
+            user-select: none;
+            border:none;
+           
+        }
+
+     
+
+        nav p:hover{
+            color: gold;
+            background-color: rgb(68, 68, 68);
+            height: 70px;
+            transition: .5s linear;
+        }
+
+        @keyframes dick{
+            0%{
+                opacity: 0;
+                transform: translate3d(0,-50px,0);
+
+            }
+            100%{
+                transform: translate3d(0,0,0);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>01</p>
+        <p>02</p>
+        <p>03</p>
+        <p>04</p>
+        <p>05</p>
+    </nav>
+    
+</body>
+</html>
